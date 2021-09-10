@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acessando dados do formulário</title>
+</head>
+<body>
+    <script>
+
+            // function apresentarPessoa(){
+           // let usuario = document.getElementById("usuario").value;
+            //let sobrenome = document.getElementById("sobrenome").value;
+            //let Apresentacao = document.getElementById("Apresentacao").value;
+            //console.log("usuario", usuario)
+            //console.log("sobrenome", sobrenome)
+            //console.log("O Usuário se apresentou como: ", apresentacao)
+            //Processo para Colocar dados em Json, parte 1 criar processo funcional
+            function apresentarPessoa(usuario, sobrenome, apresentacao) {        
+                 {
+                usuario: document.getElementById("usuario").value
+                sobrenome: document.getElementById(sobrenome).value
+                apresentacao: document.getElementById("apresentacao").valuue
+                return exemplo.usuario + exemplo.apresentacao + exemplo.sobrenome  
+                }
+}
+
+            console.log("usuario ", usuario)
+            console.log("sobrenome ", sobrenome)
+            console.log("O Usuário se apresentou como: ", apresentacao)
+            
+    </script>
+    <form action="">
+        <label for="usuario">Nome</label>
+        <input type="text" id="usuario" name="usuario" value="Digite"><br>
+        <label for="sobrenome">sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" value="Digite"><br>
+        <label for="apresentacao">Fale sobre você</label><br>
+        <input type="text" id="apresentacao" name="Apresentacao" value="Digite"><br>
+    </form>
+
+    <button onclick="apresentarPessoa()">Me apresentar no console</button>
+</body>
+</html>
